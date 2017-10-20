@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ros.yang.rosservice.MainActivity">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start" />
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="check" />
+        <Button
+            android:id="@+id/btn_stop_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop check" />
+        <Button
+            android:id="@+id/btn_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="power"
+            />
+    </TableRow>
+    <RelativeLayout
+        android:id="@+id/robot_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:paddingRight="20dp">
+        <org.ros.android.view.RosImageView
+            android:id="@+id/robot_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    apply from: "https://github.com/rosjava/android_core/raw/kinetic/buildscript.gradle"
+}
+
+allprojects {
+    /* A github url provides a good standard unique name for your project */
+    /* 项目的包名 */
+    group 'com.ros.yang.rosservice'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
